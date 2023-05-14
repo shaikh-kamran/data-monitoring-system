@@ -1,0 +1,50 @@
+.table{
+    overflow-y: scroll;
+    height: 95vh;
+}
+
+.headers{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .header{
+        min-width:80px;
+        cursor: pointer;
+        padding-left: 2px;
+        border-right: 1px solid #000;
+        background-color: black;
+    }
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .cell{
+        min-width:80px;
+        padding-left: 2px;
+        border-right: 1px solid #000;
+        font-size: 12px;
+    }
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    .filterform{
+        display: flex;
+        flex-direction: row;
+        .filterforminput{
+            width: 100px;
+        }
+    }
+}
+
+.filteractionbutton{
+    background-color: #888;
+    width:60px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
