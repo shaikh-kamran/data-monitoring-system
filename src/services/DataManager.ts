@@ -58,7 +58,7 @@ class DataManager {
     addData(data: any) {
         if (!this.idMap.hasOwnProperty(data.id)) {
             this.idMap[data.id] = this.data.length;
-            if (this.sortColumn.column) {
+            if (this.sortColumn && this.sortColumn.column) {
                 const value = data[this.sortColumn.column];
                 if (this.sortColumn.direction === 1) {
                     const index = placeInAscSorted(value, this.data, 0, this.data.length, this.sortColumn.column) + 1;
